@@ -1,0 +1,135 @@
+<!-- Página utilizando algumas tags para estudo -->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Básico sobre HTML</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Básico sobre o HTML</h1>
+        </header>
+        <hr>
+
+        <h2>O que é o html?</h2>
+
+        <p>A sigla HTML significa Hypertext Markup Language ou Linguagem de Marcação de Hipertexto
+            em português. É usada na contrução de sites para organizar e dar 
+            significado para as informações presentes no mesmo.
+        </p>
+   
+        <hr>
+        <h2>Algumas tags</h2>
+            <h3>Tags Extruturais</h3>
+                <img src="tags_estruturais.png" /> 
+                <ul>
+                    <li>A tag &lt;header&gt; representa o cabeçalho da página.</li>
+                    <li>A tag &lt;footer&gt; representa o rodapé da página</li>
+                    <li>A tag &lt;nav&gt; representa que é uma área de navegação da página</li>
+                    <li>A tag &lt;aside&gt; define um bloco de conteúdo relacionado ao conteúdo 
+                        principal. Ex: uma curiosidade, informações sobre o autor, etc.
+                    </li>
+                </ul>
+                
+             
+        
+            <h3>Algumas tags para formatação</h3>
+            <p>
+                <b>Texto em negrito utilizando a tag &lt;b&gt;.</b> 
+                Seu uso não é mais tão indicado pois embora tenha efeito visual esta tag não tm significado 
+                semântico.<br>
+                <i>Texto em itálico utilizando a tag &lt;i&gt;</i>. Mesma questão da tag anterior.<br>
+                <u>Texto sublinhado utilizando a tag &lt;u&gt;</u><br>
+                <sub>Texto subscrito utilizando a tag &lt;sub&gt;</sub> <br>
+                <sup>Texto sobrescrito utilizando a tag &lt;sup&gt;</sup><br>
+                <small>Texto com fonte menor do que o padrão utilizando a tag &lt;small&gt;</small><br>
+                <em>Texto em itálico utilizando a tag &lt;em&gt;.</em> É a forma indicada para deixar o texto em italico
+                pois esta tag tem o significado semântico de ênfase.<br>
+                <strong>Texto em negrito utilizando a tag &lt;strong&gt;. </strong>Mesmo caso da anterior 
+            </p>
+
+
+        <h3>Tags para listas</h3>
+            <p>Em ambos os casos cada item é representado pela tag &lt;li&gt;</p>
+            <h4>Lista ordenada</h4>
+                <p>Usa a tag &lt;ol&gt;.</p>
+                <ol>
+                    <li>Primeiro elemento</li>
+                    <li>Segundo elemento</li>
+                    <li>Terceiro elemento</li>
+                </ol>
+            <h4>Lista não ordenada</h4>
+                <p>Usa a tag &lt;ul&gt;.</p>
+            <ul>
+                <li>Primeiro elemento</li>
+                <li>Segundo elemento</li>
+                <li>Terceiro elemento</li>
+            </ul>
+
+
+        <h3>Links</h3>
+            <p>A tag utilizada para links é a &lt;a&gt;, e o endereço para o link é posto 
+                no atributo <em>href</em>.
+            </p>
+            <a href="http://www.google.com">Link para a página do google</a>
+
+        <h3>Tabelas</h3> 
+            <p>
+                Podemos criar tabelas usando a tag &lt;table&gt;. 
+                Cada linha deve ser declarada com a tag &lt;tr&gt; e cada célula com a tag &lt;td&gt;. 
+                Opcionalmente podemos usar a tag &lt;th&gt; para declarar células que representem a 
+                linha de cabeçalho.
+            </p> 
+            <table>
+                <tr>
+                    <th>Cabeçario 1</th>
+                    <th>Cabeçario 2</th>
+                </tr>
+                <tr>
+                    <td>conteudo 1</td>
+                    <td>conteudo 2</td>
+                </tr>
+            </table>
+
+        <h3>Formulários</h3>
+            
+            <p>
+                O início de um formulário é declarado com a tag &lt;form&gt;. O atributo <em>action</em> recebe
+                o caminho parao arquivo que irá tratar os dados. Já o atributo <em>method</em> recebe
+                o metodo pelo qual os dados serão enviados (POST ou GET).
+            </p>
+
+            <p>Alguns exemplos de campos de um formulário:</p>
+
+            <form action="processo.php" method="POST">
+                <label>Usuario:</label>
+                <input type="text" name="texto1" placeholder="Insira seu usuario" required><br><br>
+                <label>Senha</label>
+                <input type="password" placeholder="Insira sua senha"><br><br>
+
+                <select name="selecao">
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                </select> <br> <br> 
+
+                <input type="radio" name="radio" value="1"> Valor 1 <br><br>
+                <input type="radio" name="radio" value="2"> Valor 2 <br><br>
+
+                <input type="checkbox" name="cb" value="1"> cb valor 1 <br><br>
+                <input type="checkbox" name="cb" value="2"> cb valor 2 <br><br>
+
+                <input type="submit" value="Enviar" name="submit">
+            </form>
+
+            <p>
+                O input <em>type="submit"</em> serve para criar um botão que ao ser clicado
+                envia os dados preenchidos para o documento posto no <em>action.</em> Além 
+                disso o atributo <em>required</em> pode sor posto nos campos de preenchimento
+                obrigatório, dessa forma o furmulário não pode ser enviado antes desses campos
+                serem preenchidos.
+            </p>
+
+        <hr>
+    </body>
+</html>
