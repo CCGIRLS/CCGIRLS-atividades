@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    /* todos os links sem sublinhado */
+}
+
+body {
+    font-family: "Arial", Arial, Sans-serif;
+    margin: 0;
+}
+.container {
+    background-color: white;
+}
+header,
+footer {
+    color: #ffffff;
+    padding: 10px;
+    position: relative;
+}
+
+/**********************		/*      MENU   */
+#nav {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+ul.topnav {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dimgray;
+    border: 2px clear;
+    border-radius: 5px;
+}
+
+ul.topnav li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover {
+    background-color: #111;
+}
+
+ul.topnav li {
+    padding: 0.7em;
+}
+
+ul.topnav li a.active {
+    background-color: #3399ff;
+}
+
+
+/******************************************************************* layout colunas */
+.col-2{
+    float: left;
+    /* para layout flexbox, retirar esta linha */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+/***************************************** fim do rodapé	*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
