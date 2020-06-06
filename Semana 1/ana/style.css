@@ -1,0 +1,80 @@
+header {
+	background-image: url('https://2.bp.blogspot.com/-az-wagr7mzQ/V2gNXDaV8uI/AAAAAAAAXps/kvCm4VaUdnsT81c3gTAuvuyuctPb63xUwCLcB/s1600/panor%2B2%2Bred.jpg');
+	width:100%;
+	text-align: center;
+	height: 350px;
+	color: #ffffff;
+	background-position:center;
+    background-size:cover;
+    box-shadow: 0px 0px 2px #000;
+    background-color: #FFF8DC	;
+
+}
+.titulo{
+    padding:20px;
+    font-size:70px;
+    text-transform:uppercase;
+}
+.descricao{
+	font-style:italic;
+    font-family: Libre Baskerville;
+    margin-top:10px;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+nav{
+	height: 30px;	
+	width: 100%;
+	top: 300px;
+	left: 0;
+	background:cover ;
+	padding: 10px;
+	padding-top: 140px;
+}
+nav a{	
+	border: 3px solid #ffffff;
+    padding:10px 50px;
+    color:#ffffff;
+    letter-spacing:2px;
+    top:70px;
+}
+td{
+	text-align: center;
+	font-style: italic;
+	color: black;
+	font-family: Libre Baskerville;
+	font-size: 25px;
+	border: cover;
+	padding: 10px 20px;
+}
+td a{
+	color: black;
+	text-decoration: none;
+
+}
+img{
+	height: 750px;
+	width: 400px;
+
+}
+
+body{
+	background-color: #FFF8DC;
+}
+div{
+    font-family: Helvetica, Arial;
+    margin-top:10px;
+    font-size: 15px;
+    padding-left: 40px;
+}
+footer{
+	font-family: Helvetica, Arial;
+    margin-top:10px;
+    font-size: 15px;
+    padding-left: 40px;
+
+}
+table{
+	width: 100%;
+}
