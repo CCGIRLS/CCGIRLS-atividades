@@ -1,0 +1,155 @@
+body {
+    background-color: #ffcccc;
+}
+
+/* botoes */
+
+.btn {
+    display: block;
+    margin: auto;
+    margin-top: 13px;
+    border: none;
+    background-color: #ffe6e6;
+}
+
+.login-btn {
+    border: 1px solid #ffb3b3;
+    background-color: #ffcccc;
+    border-radius: 25px;
+    padding: 8px 30px;
+    color: #666;
+}
+
+.login-btn:focus {
+    outline: none;
+}
+
+.login-btn:active {
+    border: 1px solid #ff9999;
+    background-color: #ffb3b3;
+    transition: 0.2s ease all;
+}
+
+.act-btn {
+    outline: none;
+    font-size: 10px;
+    font-weight: bold;
+    color: #777;
+}
+
+.act-btn:active {
+    font-size: 10.3px;
+    transition: 0.2s ease all;
+}
+
+.act-btn:hover {
+    color: #555;
+}
+
+
+
+/* campos */
+
+.form-field {
+    margin-bottom: 19px;
+    position: relative;
+}
+
+.text-input {
+    text-align: center;
+    color: #666;
+    border: 1px solid #ffb3b3;
+    background-color: #ffe6e6;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.text-input:focus {
+    outline: none;
+    border: 1px solid #ff9999;
+    padding: 9px;
+    transition: 0.3s ease all;
+}
+
+.txt-label {
+    color: #888;
+    font-size: 13px;
+    font-weight: bold;
+    left: 70px;
+    position: absolute;
+    top: 9px;
+    transition: .5s;
+}
+
+.text-input:focus ~ .txt-label,
+.text-input:valid ~ .txt-label {
+    color: #666;
+    top: -16px;
+    left: 60px;
+    font-size: 11px;
+    font-weight: 100;
+}  
+
+
+
+/* checkbox */
+
+input[type='checkbox'] {
+    display: none; 
+} 
+
+input[type="checkbox"] + label:before {
+    border: 1px solid #ffb3b3;
+    content: "";
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 0 6px 0 0;
+    padding: 0;
+    vertical-align: top;
+    border-radius:4px;
+}
+
+input[type="checkbox"]:checked + label:before {
+    color: #ff9999;
+    content: "\2714";
+    text-align: center;
+    font: 17px/1em sans-serif;
+    font-weight: bolder;
+}
+
+.txt-cb {
+    font-size: 11px;
+    font-weight: bold;
+    color: #777;
+}
+
+.txt-cb:hover {
+    color: #555;
+}
+
+
+
+/* geral */
+
+.container {
+    background-color: #ffe6e6;
+    font-family: sans-serif;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+
+    /* Centraliza a div */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+h1 {
+    color: #ff6666;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
